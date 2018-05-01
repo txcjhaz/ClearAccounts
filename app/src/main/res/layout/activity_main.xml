@@ -11,7 +11,7 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginBottom="25dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="25dp"
         android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,7 +41,7 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginBottom="25dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="25dp"
         android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,7 +71,7 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginBottom="36dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="25dp"
         android:text="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +102,7 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginStart="25dp"
         android:text="."
         app:layout_constraintBottom_toTopOf="@+id/button0"
@@ -112,6 +113,7 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginBottom="25dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginStart="25dp"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/button_sure"
@@ -122,8 +124,24 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginBottom="36dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginStart="25dp"
         android:text="确认"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="348dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
