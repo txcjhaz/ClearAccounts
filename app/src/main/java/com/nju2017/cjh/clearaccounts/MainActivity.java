@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn_dot = (Button) findViewById(R.id.button_dot);
         Button btn_sure = (Button) findViewById(R.id.button_sure);
 
+        //类型按钮
+        Button tp_eating = (Button) findViewById(R.id.button_eating);
+        Button tp_snacks = (Button) findViewById(R.id.button10_snacks);
+
         //listener
         btn0.setOnClickListener(this);
         btn1.setOnClickListener(this);
@@ -49,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn9.setOnClickListener(this);
         btn_dot.setOnClickListener(this);
         btn_sure.setOnClickListener(this);
-
+        tp_eating.setOnClickListener(this);
+        tp_snacks.setOnClickListener(this);
 
         // Example of a call to a native method
         //TextView tv = (TextView) findViewById(R.id.textView);
@@ -59,8 +64,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClick(View e){
         Button btn = (Button) e;
+
+        //两个文本框
         TextView textView = (TextView) findViewById(R.id.textView);
+        TextView textView_type = (TextView) findViewById(R.id.textView2);
+
         String contents = (String) textView.getText();
+        if(btn.getText().equals("吃饭")){
+            textView_type.setText("吃饭");
+        }
         if(btn.getText().equals("0")
                 ||btn.getText().equals("1")
                 ||btn.getText().equals("2")
@@ -76,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             textView.setText(contents);
         }
         if(btn.getText().equals("确认")){
-            new Number().saveInput((String)textView.getText());
+            new Number().saveInput((String)textView.getText(), (String)textView_type.getText());
             //claer
             textView.setText("");
         }
